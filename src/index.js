@@ -64,7 +64,7 @@ input.onkeyup = () =>{
 }
 
 async function load() {
-    const req = await fetch("http://localhost:8080/api");
+    const req = await fetch("http://localhost:8080/dic");
     const res = await req.text();
 
     for (let x of res.split("\n")){

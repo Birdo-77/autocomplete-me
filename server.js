@@ -14,7 +14,7 @@ app.get("/", (_req, res) => {
     res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.get("/api", (_req, res) => {
+app.get("/dic", (_req, res) => {
     res.sendFile(path.join(__dirname + "/dic.txt"));
 });
 
