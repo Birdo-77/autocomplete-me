@@ -64,7 +64,8 @@ input.onkeyup = () =>{
 }
 
 async function load() {
-    const req = await fetch("http://localhost:8080/dic");
+    // Use http://localhost:8080/dic when running local
+    const req = await fetch("https://birdo-77.github.io/autocomplete-me/dic.txt");
     const res = await req.text();
 
     for (let x of res.split("\n")){
